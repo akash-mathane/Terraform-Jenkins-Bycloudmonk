@@ -1,8 +1,8 @@
 provider "aws" {
-    region = "ap-south-1"  # Mumbai Region
+    region = "us-east-1"  # Mumbai Region
 }
 resource "aws_instance" "foo" {
-  ami           = "ami-0f58b397bc5c1f2e8" # Update AMI for Mumbai region
+  ami           = "ami-05fa00d4c63e32376" # Update AMI for Mumbai region
   instance_type = "t2.micro"
   tags = {
       Name = "TF-Instance"
